@@ -1,0 +1,136 @@
+﻿
+/*
+  Ogólne ustawienia header'a
+*/
+
+.header_class {
+    font-size: 24px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    margin-top: -50px;
+    background-color: var(--tlo3);
+    box-shadow: 0px 0px 5px 5px var(--tlo3);
+    z-index: 2;
+}
+
+/*
+    Ustawienia lewej części - loga
+*/
+
+.nav-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-icon {
+    display: none;
+}
+
+.logo-style {
+    height: 35px;
+    border-radius: 10px;
+}
+
+.logo-text {
+    display: flex;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .logo-icon {
+        display: flex;
+    }
+
+    .logo-text {
+        display: none;
+    }
+}
+
+.rotate {
+    overflow: hidden;
+    transition-duration: 2s;
+    transition-property: transform;
+}
+
+    .rotate:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
+.animation{
+    animation-name: animacja;
+    animation-duration: 2s;
+    justify-content: center;
+}
+
+/*
+    Ustawienia prawej części - menu
+*/
+
+.nav-right {
+    font-size: 20px;
+    margin-right: 5%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    user-select: none;
+}
+
+.menu-text {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-text-one {
+    text-decoration: none;
+    margin: 13px;
+    background-color: var(--przycisk2);
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.menu-icon-one {
+    text-decoration: none;
+    margin: 17px;
+    background-color: var(--przycisk2);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 750px) {
+    .menu-text {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+.menu-icon-one:visited, .menu-text-one:visited {
+    color: #380803;
+}
+
+.menu-icon-one:hover, .menu-text-one:hover {
+    color: #C2F5B0;
+    background-color: #004006;
+}
+
+@keyframes animacja {
+    0% {
+        opacity: 0;
+    }
+}

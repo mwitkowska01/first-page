@@ -1,0 +1,35 @@
+﻿.side-menu-container,
+.menu-side,
+.menu-side > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+}
+
+.side-menu-container {
+    position: fixed;
+    height: 100vh;
+    left: 0px;
+}
+
+
+.menu-side > a {
+    margin: 5px 0px;
+    height: 40px;
+    background-color: var(--przycisk2);
+    border-radius: 0px 10px 10px 0px;
+    text-decoration: none;
+}
+
+    .menu-side > a:visited {
+        color: var(--ccionka);
+    }
+
+    .menu-side > a:hover {
+        margin: 5px 0px;
+        height: 40px;
+        color: #C2F5B0;
+        background-color: #004006;
+    }

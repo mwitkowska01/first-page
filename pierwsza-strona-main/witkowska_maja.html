@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <title>Jeże</title>
+    <meta name="author" content="Maja Witkowska" />
+    <meta name="description" content="Ta strona jest o jeżach" />
+    <meta name="keywords" content="jeż, jeże, ciekawostki, jeżyki" />
+    <meta charset="utf-8" />
+    <link href="Styles/styl_scrollbar.css" rel="stylesheet" />
+    <link href="Styles/style.css" rel="stylesheet" />
+    <link href="Styles/styl_menu_gorne.css" rel="stylesheet" />
+    <link href="Styles/color.css" rel="stylesheet" />
+    <link href="Styles/styl_menu_boczne.css" rel="stylesheet" />
+    <link href="Pictures/Jez1.png" rel="icon" type="image/png" />
+    <script src="https://kit.fontawesome.com/cd347203f1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($(this).width() < 600) {
+                $('.nav-right').hide();
+                $('.side-menu-container').show();
+            } else {
+                $('.side-menu-container').hide();
+                $('.nav-right').show();
+            }
+        });
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                var elmnt = document.getElementById("sekcja1");
+                elmnt.scrollIntoView();
+            });
+        });
+        $(document).ready(function () {
+            $("#button2").click(function () {
+                var elmnt = document.getElementById("sekcja2");
+                elmnt.scrollIntoView();
+            });
+        });
+        $(document).ready(function () {
+            $("#button3").click(function () {
+                var elmnt = document.getElementById("sekcja3");
+                elmnt.scrollIntoView();
+            });
+        });
+        $(document).ready(function () {
+            $("#button4").click(function () {
+                var elmnt = document.getElementById("sekcja4");
+                elmnt.scrollIntoView();
+            });
+        });
+
+        $(window).resize(function () {
+            if ($(this).width() < 600) {
+                $('.nav-right').hide();
+                $('.side-menu-container').show();
+            } else {
+                $('.side-menu-container').hide();
+                $('.nav-right').show();
+            }
+        });
+    </script>
+</head>
+<body style="margin: 0px;">
+    <header class="header_class">
+        <div class="nav-left">
+            <a class="logo-text rotate animation">
+                Jeżyk
+            </a>
+            <a class="logo-icon animation">
+                <img class="logo-style rotate" src="Pictures/logo.png"  alt="jeż">
+            </a>
+        </div>
+        <nav class="nav-right">
+            <div class="menu-text">
+                <a class="menu-text-one" id="button1">Home</a>
+                <a class="menu-text-one" id="button2">About</a>
+                <a class="menu-text-one" id="button3">Work</a>
+                <a class="menu-text-one" id="button4">Contact</a>
+            </div>
+            <div class="menu-icon">
+                <a class="fa-solid fa-thumbs-up menu-icon-one" href="#sekcja1"></a>
+                <a class="fa-regular fa-envelope menu-icon-one" href="#sekcja2"></a>
+                <a class="fa-solid fa-globe menu-icon-one" href="#sekcja3"></a>
+                <a class="fa-solid fa-tag menu-icon-one" href="#sekcja4"></a>
+            </div>
+        </nav>
+        <div class="side-menu-container">
+            <nav class="menu-side">
+                <a href="#sekcja1">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                </a>
+                <a href="#sekcja2">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="#sekcja3">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+                <a href="#sekcja4">
+                    <i class="fa-solid fa-tag"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <div class="container-main">
+        <div>
+            <img class="loading-page" src="Pictures/loading-page.png"  alt="jeż z jabłkiem"/>
+        </div>
+        <section id="sekcja1">
+            <div class="container">
+                <h1>Pierwsza sekcja</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie ligula ac nisl luctus, et fringilla nulla congue. Ut nulla nisi, dapibus sed tellus mattis, laoreet semper turpis. Phasellus blandit commodo tortor at ullamcorper. Curabitur nec ligula risus. Curabitur tortor lacus, lacinia vitae nibh eu, congue posuere odio. Donec mi enim, gravida ac aliquet id, facilisis nec urna. Duis mollis.</p>
+                <figure class="figure-background">
+                    <img class="imgcl img_size" src="https://przedszkole4.edu.wroclaw.pl/wp-content/uploads/sites/11/2019/08/24638187-kreskówki-jeż-z-jabłkiem-na-białym.jpg"
+                         title="Jabłko z jeżykiem" />
+                    <br />
+                    <figcaption>
+                        <a href="https://przedszkole4.edu.wroclaw.pl/index.php/2021/09/08/wycieczka-do-parku/">Link do strony z rysunkiem</a>
+                    </figcaption>
+                </figure>
+                <div class="paragraph">
+                    <h2>paragraf 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie ligula ac nisl luctus, et fringilla nulla congue. Ut nulla nisi, dapibus sed tellus mattis, laoreet semper turpis. Phasellus blandit commodo tortor at </p>
+                    <div class="paragraph">
+                        <h3>paragraf 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie ligula ac nisl luctus, et fringilla nulla congue. Ut nulla nisi, dapibus sed tellus mattis, laoreet semper turpis. Phasellus blandit commodo tortor at </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="sekcja2">
+            <div class="container">
+                <h1>Druga sekcja</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae nisi urna. Phasellus eu magna fermentum, ornare erat vitae, lobortis lacus. Sed efficitur sapien quis purus finibus, et blandit neque tempor. Curabitur consequat malesuada neque, vitae sagittis libero scelerisque in. Duis accumsan enim massa, in iaculis nisl efficitur vel. Ut.</p>
+                <figure class="figure-background">
+                    <img class="imgcl img_size" src="https://img.freepik.com/darmowe-wektory/kreskowka-maly-jez-niesie-jablko-z-grzybami-i-lisciem-na-plecach_29190-5866.jpg?w=740" title="jeżyk z jabłkiem"  alt="jeż z jabłkiem"/>
+                    <br />
+                    <figcaption>
+                        <a class="link-img-style" href="https://pl.freepik.com/premium-wektory/kreskowka-maly-jez-niesie-jablko-z-grzybami-i-lisciem-na-plecach_9639195.htm">Link do strony z rysunkiem</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="container" id="sekcja3">
+            <h1>Trzecia sekcja</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et augue non risus tristique mollis at a arcu. Integer sed commodo tellus. In dignissim, nulla.</p>
+        </div>
+
+        <hr>
+
+        <div class="container" id="sekcja4">
+            <h1>Czwarta sekcja</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula.
+            </p>
+            <div class="flex">
+                <div class="half">
+                    <ul>
+                        <li>W kolizjach drogowych</li>
+                        <li>W wyniku zatruć środkami owadobujczymi</li>
+                        <li>W wyniku wypalania traw, ognisk z gałęzi i liści</li>
+                        <li>Z powodu kontuzji spowodowanych kosiarkami samojezdnymi</li>
+                    </ul>
+                </div>
+
+                <div class="half">
+                    <ol>
+                        <li>jeż wschodni Erinaceus roumanicus Barrett-Hamilton</li>
+                        <li>jeż zachodni Erinaceus europaeus Linnaeus</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="flex table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>rozmiar jeża</th>
+                            <th>liczba kolców</th>
+                            <th>kolor kolców</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>niemowlęce</td>
+                            <td>średni jeż</td>
+                            <td>duży jeż</td>
+                        </tr>
+                        <tr>
+                            <td>ok. 100</td>
+                            <td>ok. 5000</td>
+                            <td>ok. 7000</td>
+                        </tr>
+                        <tr>
+                            <td>białe</td>
+                            <td colspan="2">białe i czarne</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="flex">
+        <p>Autor: Maja Witkowska, 2022 &copy;</p>
+        <p id="zegar" style="margin-left: 50px; margin-right: 10px"></p>
+    </footer>
+    <script>
+        function godzina() {
+            var data = new Date();
+            var godz = data.getHours();
+            var minuta = data.getMinutes();
+            var sekunda = data.getSeconds();
+            if (godz < 10) {
+                godz = "0" + godzina;
+            }
+            if (minuta < 10) {
+                minuta = "0" + minuta;
+            }
+            if (sekunda < 10) {
+                sekunda = "0" + sekunda;
+            }
+            document.getElementById("zegar").innerHTML = godz + ":" + minuta + ":" + sekunda;
+            setInterval(godzina, 1000);
+        }
+        godzina()
+    </script>
+</body>
+</html>

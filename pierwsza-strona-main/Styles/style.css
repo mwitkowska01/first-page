@@ -1,0 +1,146 @@
+﻿/*Ustawienia całej strony*/
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Hubballi', cursive;
+    color: var(--ccionka);
+    background-color: var(--tlo1);
+}
+
+/*Ustawniena głównego pojemnika na całą treść (poza header i footer)*/
+
+.container-main {
+    height: calc(100vh - 80px);
+    margin-top: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+/*Ustawienia loading page*/
+
+.loading-page {
+    height: calc(100vh - 80px);
+    width: calc(100vw - 16px);
+    object-fit: cover;
+}
+
+/*Ustawienie koloru czcionki i rozmycia*/
+
+h1, h2, h3, header, footer {
+    text-shadow: 2px 2px 5px var(--ccionka-tytuly);
+    color: var(--ccionka-tytuly);
+}
+
+/*Wcięcie (używane do robienia marginesów na paragrafach)*/
+
+.paragraph {
+    margin-left: 15px;
+}
+
+/*Ustawienie głównego kontenera*/
+.container {
+    background-color: var(--tlo2);
+    min-height: 100vh;
+    box-shadow: 0px 0px 3px 3px var(--tlo2);
+    text-align: justify;
+    margin: 2% 10% 2% 10%;
+    padding: 2.5% 5% 2.5% 5%;
+}
+
+hr {
+    width: 90%;
+    background-color: var(--tlo3);
+    margin: 2% 5% 2% 5%;
+    height: 10px
+}
+
+/*Ustawienia zdjęć*/
+
+.imgcl {
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.img_size {
+    max-width: 60%;
+    max-height: 60%;
+}
+
+/*Tło zdjęć*/
+
+.figure-background {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    justify-content: space-around;
+    max-width: 60%;
+    max-height: 60%;
+    background-color: var(--tlo3);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 15px var(--tlo3);
+}
+
+/*Klasa która zajmuje połowę możliwego zajmowanego miejsca na szerokość*/
+
+.half {
+    background-color: var(--tlo3);
+    box-shadow: 0px 0px 5px 5px var(--tlo3);
+    width: 45%;
+    margin: 2%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/*Ustawienia tabeli*/
+
+td {
+    border: 3px solid var(--przycisk2);
+    background-color: #C2F5B0;
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+    background-color: var(--przycisk2);
+    padding: 5px;
+}
+
+table {
+    background-color: var(--tlo3);
+    box-shadow: 0px 0px 5px 5px var(--tlo3);
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    padding: 15px;
+}
+
+
+/*Ustawienia stopki*/
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    width: 100vw;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px var(--tlo3);
+    background-color: var(--tlo3);
+    z-index: 2;
+}
+
